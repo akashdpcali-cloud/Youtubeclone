@@ -1,0 +1,56 @@
+.searchbutton,
+.voicesearch,
+.createhover,
+.layouthover,
+.belldiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: bottom;
+    position: relative;
+}
+.searchhover,
+.voicehover
+{
+    white-space: nowrap;
+    color: white;
+   background-color: rgba(80, 80, 80, 0.77);
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -65px;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 15px;
+    font-family: roboto,Arial;
+    transition: opacity 0.3s;
+}
+.create,
+.layouts,
+.noti{
+    white-space: nowrap;
+    color: white;
+    background-color: rgba(80, 80, 80, 0.77);
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -75px;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 15px;
+    font-family: roboto,Arial;
+    transition: opacity 0.3s;
+}
+.searchbutton:hover .searchhover,
+.voicesearch:hover .voicehover,
+.createhover:hover .create,
+.layouthover:hover .layouts,
+.belldiv:hover .noti{
+    opacity: 1;
+}
